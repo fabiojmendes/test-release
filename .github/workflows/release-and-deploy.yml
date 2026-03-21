@@ -25,6 +25,7 @@ jobs:
         with:
           # 'node' handles standard package.json version bumping
           release-type: node
+          target-branch: master
 
   build-and-deploy:
     needs: release-please
