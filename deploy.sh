@@ -2,7 +2,11 @@
 
 set -xeuo pipefail
 
+git status
+
 ls -la
+
+git tag --points-at HEAD || true
 
 git describe --tags || true
 
