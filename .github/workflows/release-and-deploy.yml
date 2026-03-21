@@ -3,7 +3,7 @@ name: Release and Deploy
 on:
   push:
     branches:
-      - master # Update to 'main' if that is your default branch
+      - '*' # Update to 'main' if that is your default branch
 
 # CRITICAL: release-please requires these permissions to create tags,
 # update the CHANGELOG.md, and manage the Release PR.
@@ -33,13 +33,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # Ensure we check out the exact tag that was just created, not just the master HEAD
           ref: ${{ needs.release-please.outputs.tag_name }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '25'
           cache: 'npm' # Change to 'yarn' or 'pnpm' if applicable
