@@ -3,7 +3,7 @@ name: Release and Deploy
 on:
   push:
     branches:
-      - '*' # Update to 'main' if that is your default branch
+      - staging # Update to 'main' if that is your default branch
 
 # CRITICAL: release-please requires these permissions to create tags,
 # update the CHANGELOG.md, and manage the Release PR.
@@ -25,6 +25,7 @@ jobs:
         with:
           # 'node' handles standard package.json version bumping
           release-type: node
+          target-branch: master
 
   build-and-deploy:
     needs: release-please
