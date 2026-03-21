@@ -2,6 +2,8 @@
 
 set -xeuo pipefail
 
+ls -la
+
 git describe --tags || true
 
 version=$(git describe --tags --exact-match || true)
