@@ -3,7 +3,7 @@ name: Release and Deploy
 on:
   push:
     branches:
-      - staging # Update to 'main' if that is your default branch
+      - release* # Update to 'main' if that is your default branch
 
 # CRITICAL: release-please requires these permissions to create tags,
 # update the CHANGELOG.md, and manage the Release PR.
