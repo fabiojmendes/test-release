@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/fabiojmendes/test-release/compare/v1.1.1...v1.2.0) (2026-03-24)
+
+
+### Features
+
+* remove clutter ([7d918d9](https://github.com/fabiojmendes/test-release/commit/7d918d93bc1dc4b39d37c1037a59669b46682e89))
+
+
+### Bug Fixes
+
+* deployment ([b5bc90e](https://github.com/fabiojmendes/test-release/commit/b5bc90e7a8ad10571d4b39e6dc400bbcbfa5d32d))
+* fix release-please trigger ([#7](https://github.com/fabiojmendes/test-release/issues/7)) ([42ed233](https://github.com/fabiojmendes/test-release/commit/42ed2336a57d54b0304dc39256dc12a528215365))
+
 ## [1.1.1](https://github.com/fabiojmendes/test-release/compare/v1.1.0...v1.1.1) (2026-03-21)
 
 
