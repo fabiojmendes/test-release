@@ -53,9 +53,8 @@ jobs:
 
       # Assuming you are deploying a static React app to Cloudflare Pages via Wrangler.
       # If you are using raw Workers, change the command to 'deploy'.
-      # - name: Deploy to Cloudflare
-      #   uses: cloudflare/wrangler-action@v3
-      #   with:
-      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      #     command: pages deploy build/ --project-name=your-cloudflare-project-name
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: deploy
