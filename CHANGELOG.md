@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/fabiojmendes/test-release/compare/v1.2.0...v1.2.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* remove unecessary code ([cbcfbb4](https://github.com/fabiojmendes/test-release/commit/cbcfbb455c0d13c33701228e3824fa7240dc13cd))
+
 ## [1.2.0](https://github.com/fabiojmendes/test-release/compare/v1.1.1...v1.2.0) (2026-03-24)
 
 
